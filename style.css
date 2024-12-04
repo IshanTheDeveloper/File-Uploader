@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url("https://img.freepik.com/premium-photo/yellow-blue-abstract-creative-background-blue-abstract-background-geometric-background_481527-28134.jpg?semt=ais_hybrid");
+  background-size: auto;
+  backdrop-filter: blur(20px);
+}
+.heading {
+  color: white;
+  background-color: slategrey;
+  text-align: center;
+  font-size: 4rem;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  box-shadow: 0 0 5px 4px black;
+  padding: 0.2rem;
+}
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+.content {
+  border: 5px dotted rgb(37, 145, 234);
+  padding: 0.5rem;
+  border-top-left-radius: 3rem;
+  border-bottom-right-radius: 3rem;
+  overflow: hidden;
+  background-color: rgb(255, 255, 255, 0.3);
+}
+.content p {
+  font-size: 2.5rem;
+  color: rgb(40, 40, 108);
+  padding-left: 2rem;
+}
+#uploader-image {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+.content i {
+  font-size: 5rem;
+  text-align: center;
+}
+.content input {
+  margin-left: 20%;
+  padding: 1rem;
+  &:hover {
+    cursor: pointer;
+  }
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1vw;
+}
+.buttons button {
+  font-size: 1rem;
+  padding: 0.3rem;
+  border-radius: 0.3rem;
+  border: none;
+  background-color: rgb(29, 103, 132);
+  color: white;
+  box-shadow: 0 0 2px 2px slategray;
+  &:hover {
+    background-color: rgb(6, 105, 203);
+    border: 2px solid red;
+    box-shadow: none;
+  }
+}
+.display {
+  text-align: center;
+  padding: 1rem;
+}
+@media (max-width: 450px) {
+  .heading {
+    font-size: 3rem;
+  }
+  .buttons {
+    gap: 4vw;
+  }
+}
